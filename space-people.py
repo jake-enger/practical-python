@@ -1,10 +1,10 @@
 import requests
 
-people = requests.get('https://api.open-notify.org/astros.json')
-json = people.json()
+response = requests.get("http://api.open-notify.org/astros.json")
 
+json = response.json()
 print(json)
 
 print("The people in space currently are:")
-for p in json["people"]:
-    print(p["name"])
+for person in json["people"]:
+    
