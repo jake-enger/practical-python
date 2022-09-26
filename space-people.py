@@ -7,4 +7,4 @@ print(json)
 
 print("The people in space currently are:")
 for person in json["people"]:
-    
+    print("people"["name"])
